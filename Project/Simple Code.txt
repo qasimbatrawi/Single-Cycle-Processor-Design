@@ -1,0 +1,9 @@
+;all registers are initially zeros
+ADDI R7, R7, 9   ; R7 = 9 
+ADDI R5, R5, 3  ; R5 = 3
+ADD R6, R5, R7   ; R6 = R5 + R7 = 12
+BEQ R6, R5, Loop ; If R6 == R5, branch to Loop
+ADD R3, R6, R6   ; R3 = 0 if true-> skip
+Loop: J Loop     ; Stay here forever
+;1220204 Qasim 
+;1220006 Taleed
